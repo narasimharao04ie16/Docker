@@ -9,8 +9,6 @@ RUN mv apache-tomcat-8.5.55/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
 
-WORKDIR /opt/tomcat/webapps
-COPY *.war .
 
 EXPOSE 8088
 
